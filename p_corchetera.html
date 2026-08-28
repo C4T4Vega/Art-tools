@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Tools - Corchetera negra B4 Torre</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Art Tools"/>
+                    </a>
+                </h1>                
+            </div>
+            <ul class="menu">
+                <li class="menu-categorias">
+                    <details>
+                        <summary>Categorías</summary>
+                        <ul class="submenu">
+                            <li><a href="#">Escolar</a></li>
+                            <li><a href="#">Oficina</a></li>
+                            <li><a href="#">Papelería</a></li>
+                            <li><a href="#">Técnicas varias</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="informacion.html">Información</a></li>
+            </ul>
+            <form action="/busqueda" method="get">
+                <img src="img/lupa.png" alt="" aria-hidden="true"/>
+                <label for="busqueda">Buscar</label>
+                <input type="text" id="busqueda" 
+                    name="barraBusqueda" placeholder="Pinturas acrílicas">
+            </form>
+            <a href="#">
+                <img src="img/carrito-de-compras.png" alt="Carrito"/>
+            </a>
+        </div>
+    </header>
+    <main>
+        <a  class="volver" href="productos.html">Volver</a>
+        <section class="detalle-producto">
+            <div class="imagen-producto">
+                <img src="img/productos/corchetera.jpg" alt="Corchetera negra B4 Torre"/>
+            </div>
+            <div class="producto-info">
+                <h2>Corchetera negra B4 Torre</h2>
+                <p class="precio">$5.690</p>
+                <p class="descripcion">Corchetera negra B4 Torre, 
+                    ideal para trabajos escolares, oficina y para lo que necesites organizar.
+                </p>
+                <div class="cantidad">
+                <label for="cantidad">Cantidad</label>
+                    <input
+                        type="number"
+                        id="cantidad"
+                        name="cantidad"
+                        value="1"
+                        min="1">
+                </div>
+                <button type="button">Agregar al carrito</button>
+            </div>       
+        </section>
+        <section class="descripcion-producto">
+            <h2>Descripción del producto</h2>
+            <p>
+                La corchetera negra B4 Torre es una alternativa
+                práctica para trabajos escolares, actividades
+                de oficina y uso cotidiano.
+            </p>
+            <p>
+                Su diseño permite organizar y unir documentos
+                de manera sencilla.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Art Tools"/>
+                </a>
+            </li>
+            <li><a href="informacion.html">Nosotros</a></li>
+            <li><a href="informacion.html">Contáctanos</a></li>
+        </ul>
+        <p>&copy; 2026 Art Tools</p>
+    </footer>
+</body>
+</html>
