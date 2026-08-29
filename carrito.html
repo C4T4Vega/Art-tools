@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Tools - Carrito</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+</head>
+<body>
+    <header>
+        <nav class="cabecera">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Art Tools"/>
+                    </a>
+                </h1>
+            </div>
+            <ul class="menu">
+                <li class="menu-categorias">
+                    <details>
+                        <summary>Categorías</summary>
+                        <ul class="submenu">
+                            <li><a href="#">Escolar</a></li>
+                            <li><a href="#">Oficina</a></li>
+                            <li><a href="#">Papelería</a></li>
+                            <li><a href="#">Técnicas varias</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="informacion.html">Información</a></li>
+            </ul>
+            <form action="/busqueda" method="get">
+                <img src="img/lupa.png" alt="" aria-hidden="true"/>
+                <label for="busqueda">Buscar</label>
+                <input type="text" id="busqueda" 
+                    name="barraBusqueda" placeholder="Pinturas acrilicas">
+            </form>
+            <a href="#">
+                <img src="img/carrito-de-compras.png" alt="Carrito"/>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="carrito">
+            <h2>Mi carrito</h2>
+            <div class="productos-carrito">
+                <article class="producto-carrito">
+                    <div class="img-p-carrito">
+                        <img src="img/productos/corchetera.jpg" alt="Corchetera negra B4 Torre"/>
+                    </div>
+                    <div class="info-carrito">
+                        <h3>Corchetera negra B4 Torre</h3>
+                        <p class="precio">$5.690</p>
+                        <div class="cantidad">
+                            <label for="cantidad-p">Cantidad</label>
+                            <input type="number" id="cantidad-p"
+                                name="cantidad-p" value="1" min="1"/>
+                        </div>
+                    </div>
+                    <button type="button">Eliminar</button>
+                </article>
+                <aside class="resumen-carrito">
+                    <h2>Resumen de compra</h2>
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span>$5.690</span>
+                    </div>
+                    <div class="envio">
+                        <span>Envío</span>
+                        <span>$2.990</span>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <strong>$8.680</strong>
+                    </div>
+                    <button type="button">
+                        Finalizar compra                    
+                    </button>
+                    <a href="productos.html">Seguir comprando</a>
+                </aside>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Art Tools">
+                </a>
+            </li>
+            <li><a href="informacion.html">Nosotros</a></li>
+            <li><a href="informacion.html">Contáctanos</a></li>
+        </ul>
+        <p>&copy; 2026 Art Tools</p>
+    </footer>
+</body>
+</html>
