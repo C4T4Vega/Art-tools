@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Tools - Tu tienda de arte</title>
-    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,7 +19,8 @@
                     </a>
                 </h1>
             </div>
-            <ul class="menu">
+            <div class="content-menu">
+                <ul class="menu">
                 <li class="menu-categorias">
                     <details>
                         <summary>Categorías</summary>
@@ -30,16 +34,19 @@
                 </li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="informacion.html">Información</a></li>
-            </ul>
-            <form action="/busqueda" method="get">
+                </ul>
+                <div class="buscar">
+                <form action="/busqueda" method="get">
                 <img src="img/lupa.png" alt="" aria-hidden="true"/>
                 <label for="busqueda">Buscar</label>
                 <input type="text" id="busqueda" 
                     name="barraBusqueda" placeholder="Pinturas acrilicas">
-            </form>
-            <a href="carrito.html">
+                </form>
+                </div>
+                <a class="carrito" href="carrito.html">
                 <img src="img/carrito-de-compras.png" alt="Carrito"/>
             </a>
+            </div>
         </nav>
     </header>
     <main>
@@ -53,13 +60,14 @@
         </section>
         <section id="productos-destacados">
             <h2>Productos destacados</h2>
-            <article class="producto-card">
+            <div class="productos-grid">
+                <article class="producto-card">
                 <a href="producto.html">
                   <img src="img/productos/corchetera.jpg" 
                         alt="corchetera negra b4 torre"/>
                     <h3>Corchetera negra B4 Torre</h3>  
                 </a>
-                <p>$5.690</p>
+                <p class="precio">$5.690</p>
                 <button type="button">Agregar al carrito</button>   
             </article>     
             <article class="producto-card">
@@ -68,7 +76,7 @@
                         alt="cuaderno universitario torre 7mm 100hjs"/>
                     <h3>Cuaderno Universitario Torre 7mm 100hjs</h3>
                 </a>
-                <p>$1.900</p>
+                <p class="precio">$1.900</p>
                 <button type="button">Agregar al carrito</button>   
             </article>     
             <article class="producto-card">
@@ -77,7 +85,7 @@
                         alt="libreta negra tapa dura 100 hjs rayadas"/>
                     <h3>Libreta negra tapa dura 100 hjs rayadas</h3>
                 </a> 
-                <p>$1.900</p>
+                <p class="precio">$1.900</p>
                 <button type="button">Agregar al carrito</button>   
             </article>     
             <article class="producto-card">
@@ -86,7 +94,7 @@
                         alt="set 5 pinceles para acrilico artel"/>
                     <h3>Set 5 Pinceles para Acrílico Artel</h3>
                 </a>
-                <p>$6.500</p>
+                <p class="precio">$6.500</p>
                 <button type="button">Agregar al carrito</button>   
             </article>     
             <article class="producto-card">
@@ -95,19 +103,22 @@
                         alt="set 24 pinturas acrilicas tubos 24 artel"/>
                     <h3>Set De 24 Pinturas Acrílicas En Tubos 24 Artel</h3>
                 </a>                
-                <p>$8.490</p>
+                <p class="precio">$8.490</p>
                 <button type="button">Agregar al carrito</button>   
-            </article>     
+            </article>   
+            </div>  
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="index.html">
+        <div class="footer-cont">
+            <a href="index.html">
                 <img src="img/logo.png" alt="Art Tools" />
-            </a></li>
-            <li><a href="informacion.html">Nosotros</a></li>
-            <li><a href="informacion.html">Contáctanos</a></li>
-        </ul>
+            </a>
+            <ul>
+                <li><a href="informacion.html">Nosotros</a></li>
+                <li><a href="informacion.html">Contáctanos</a></li>
+            </ul>
+        </div>
         <p>&copy; 2026 Art Tools</p>
     </footer>
 </body>

@@ -1,0 +1,257 @@
+*{
+    margin: 0px;/*quita margenes*/
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.cabecera {
+    display: flex;/*coloca elementos en una fila*/
+    align-items: center;/*coloca elementos en el centro verticalmente*/
+    justify-content: space-between;/*coloca elementos en el centro horizontalmente*/
+    padding: 15px 40px;
+    background-color: #77942e;
+}
+
+.logo img {
+    width: 90px;/*maneja el ancho*/
+    height: auto;/*calcula para mantener la proporción*/
+}
+
+.content-menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;/*da espacio entre elementos*/
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;/*quita viñetas de lista*/
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+
+.menu > li a {
+    color: #ffff;
+}
+.menu-categorias {
+    position: relative;
+
+}
+
+.menu-categorias summary {
+    cursor: pointer;
+}
+
+.submenu {
+    position: absolute;
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #3a6324;
+    border: 1px solid #ffff;
+    border-radius: 8px;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: #ffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.submenu a:hover {
+    background-color: #00543d; 
+    text-decoration: none;
+}
+
+.content-menu form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.content-menu form label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;/*esconde el texto"buscar"*/    
+}
+.content-menu form input {
+    border-radius: 10px;
+}
+
+.content-menu form img {
+    width: 20px;
+    height: 20px;
+}
+
+.content-menu form input {
+    width: 180px;
+    padding: 8px;
+}
+
+.content-menu > a img {/*selecciona los a hijos de cabecera*/
+    width: 30px;
+    height: 30px;
+}
+
+#hero {
+    position: relative;
+    width: 100%;/*ocupa todo el anocho disponible*/
+    height: 400px;
+    overflow: hidden;
+}
+
+#hero > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;/* mueve al elemento al 50% del banner */
+    left: 50%; /* lo lleva al 50% del ancho */
+    transform: translate(-50%, -50%);/* lo mueve hacia atras de su propio tamaño */
+    text-align: center;
+    z-index: 1;    
+    background-color: rgb(255, 255, 255, 0.7) ;
+    padding: 20px;
+    border-radius: 15px;
+}
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content a{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #77942e;
+    border-radius: 5px;
+    color: #ffff;
+}
+
+.hero-content a:hover { 
+    background-color: #00543d;
+}
+
+#productos-destacados {
+    padding: 50px 40px;   
+    background-color: #f0eeee;
+}
+
+#productos-destacados  h2 {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.producto-card {
+    padding: 20px;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffff;
+}
+
+.producto-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.producto-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.producto-card {
+    transition: transform 0.2s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+.producto-card h3 {
+    margin: 15px 0 10px;
+}
+
+.producto-card .precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.producto-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #3b3b3b;
+    color: #ffff;
+    padding: 25px 40px;
+}
+
+.footer-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-cont ul {
+    display: flex;
+    list-style: none;
+    gap:15px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-cont a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.footer-cont img {
+    width: 90px;
+    height: auto;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
