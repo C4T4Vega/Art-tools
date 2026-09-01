@@ -112,7 +112,7 @@ header {
     height: 30px;
 }
 
-#hero{
+.hero-info{
     background-image: url("../img/banners/banner2.jpg");
     background-size: cover;
     background-position: center;
@@ -201,6 +201,7 @@ header {
 .contacto button:hover {
     opacity: 0.8;
 }
+
 footer {
     background-color: #3b3b3b;
     color: #ffff;

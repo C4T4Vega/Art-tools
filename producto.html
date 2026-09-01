@@ -4,47 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Tools - Corchetera negra B4 Torre</title>
-    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/style_producto.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="cabecera">
+        <nav class="cabecera">
             <div class="logo">
                 <h1>
                     <a href="index.html">
                         <img src="img/logo.png" alt="Art Tools"/>
                     </a>
-                </h1>                
+                </h1>
             </div>
-            <ul class="menu">
-                <li class="menu-categorias">
-                    <details>
-                        <summary>Categorías</summary>
-                        <ul class="submenu">
-                            <li><a href="#">Escolar</a></li>
-                            <li><a href="#">Oficina</a></li>
-                            <li><a href="#">Papelería</a></li>
-                            <li><a href="#">Técnicas varias</a></li>
-                        </ul>
-                    </details>
-                </li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="informacion.html">Información</a></li>
-            </ul>
-            <form action="/busqueda" method="get">
+            <div class="content-menu">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="menu-categorias">
+                        <details>
+                            <summary>Categorías</summary>
+                            <ul class="submenu">
+                                <li><a href="#">Escolar</a></li>
+                                <li><a href="#">Oficina</a></li>
+                                <li><a href="#">Papelería</a></li>
+                                <li><a href="#">Técnicas varias</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                </ul>
+                <div class="buscar">
+                <form action="/busqueda" method="get">
                 <img src="img/lupa.png" alt="" aria-hidden="true"/>
                 <label for="busqueda">Buscar</label>
                 <input type="text" id="busqueda" 
-                    name="barraBusqueda" placeholder="Pinturas acrílicas">
-            </form>
-            <a href="#">
+                    name="barraBusqueda" placeholder="Pinturas acrilicas">
+                </form>
+                </div>
+                <a class="carrito" href="carrito.html">
                 <img src="img/carrito-de-compras.png" alt="Carrito"/>
             </a>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <a  class="volver" href="productos.html">Volver</a>
+        <div class="volver">
+            
+            <a class="volver" href="productos.html">
+                <img src="img/flecha.png" alt="regresar"/>Volver</a>
+        </div>
         <section class="detalle-producto">
             <div class="imagen-producto">
                 <img src="img/productos/corchetera.jpg" alt="Corchetera negra B4 Torre"/>
@@ -81,15 +92,15 @@
         </section>
     </main>
     <footer>
-        <ul>
-            <li>
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Art Tools"/>
-                </a>
-            </li>
-            <li><a href="informacion.html">Nosotros</a></li>
-            <li><a href="informacion.html">Contáctanos</a></li>
-        </ul>
+        <div class="footer-cont">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Art Tools" />
+            </a>
+            <ul>
+                <li><a href="informacion.html">Nosotros</a></li>
+                <li><a href="informacion.html">Contáctanos</a></li>
+            </ul>
+        </div>
         <p>&copy; 2026 Art Tools</p>
     </footer>
 </body>
